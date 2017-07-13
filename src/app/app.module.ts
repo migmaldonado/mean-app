@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { DragulaModule } from 'ng2-dragula';
 
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
@@ -30,6 +31,7 @@ const ROUTES = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    DragulaModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [PostsService],

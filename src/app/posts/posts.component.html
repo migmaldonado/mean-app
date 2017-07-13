@@ -1,4 +1,4 @@
-<div class="container">
+<div  id="list-wrapper-container" [dragula]='"lists"' [dragulaModel]="lists" class="container">
   <div class="row" *ngFor="let post of posts">
     <div class="card card-block">
       <h4 class="card-title">{{ post.title }}</h4>
